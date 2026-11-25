@@ -51,10 +51,10 @@ No fim da partida (vitória ou derrota), digite seu nome para entrar na **tabela
 
 ## Créditos
 
-**Equipe:** _nomes dos integrantes aqui_
+**Equipe:** Vinicius Dib, Greta Faria, Thomas Rudge, Enzo Christofoletti
 
 **Assets de terceiros:**
 - _(nenhum até agora: a cena, as texturas e os sons são gerados por código no próprio projeto)_
-- _Ao importar modelos/sons, liste aqui: nome do pacote, autor, licença e link. Ex.: "Food Kit — Kenney (kenney.nl) — CC0"._
+
 
 **Ferramentas:** Unity 6 (URP), Input System. Parte do código foi escrita com auxílio do Claude Code (Anthropic).
