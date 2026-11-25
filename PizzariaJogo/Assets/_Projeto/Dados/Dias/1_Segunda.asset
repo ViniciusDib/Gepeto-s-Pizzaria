@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14014af9469d3346a5f68dc99a07620, type: 3}
+  m_Name: 1_Segunda
+  m_EditorClassIdentifier: Assembly-CSharp::Pizzaria.Jogo.DiaSO
+  nomeExibicao: Segunda-feira
+  descricao: "Dia tranquilo: poucos clientes e sabores f\xE1ceis. As dicas mostram cada passo."
+  duracao: 180
+  cardapio:
+  - {fileID: 11400000, guid: 6f24705f46b76184fb85afb189d3a47b, type: 2}
+  - {fileID: 11400000, guid: 7e304310907c4324f992bbc4e789d068, type: 2}
+  primeiroPedidoEm: 4
+  intervaloEntrePedidos: {x: 28, y: 38}
+  paciencia: 130
+  maxPedidosAbertos: 2
+  limiteClientesPerdidos: 3
+  mostrarDicas: 1

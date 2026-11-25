@@ -1,0 +1,42 @@
+# Unity (projeto em PizzariaJogo/)
+/PizzariaJogo/[Ll]ibrary/
+/PizzariaJogo/[Tt]emp/
+/PizzariaJogo/[Oo]bj/
+/PizzariaJogo/[Bb]uild/
+/PizzariaJogo/[Bb]uilds/
+/PizzariaJogo/[Ll]ogs/
+/PizzariaJogo/[Uu]ser[Ss]ettings/
+/PizzariaJogo/[Mm]emoryCaptures/
+/PizzariaJogo/[Rr]ecordings/
+/PizzariaJogo/Assets/Plugins/Editor/JetBrains*
+/PizzariaJogo/Assets/[Ss]treamingAssets/aa*
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Builds / SO
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-build.properties
+.DS_Store
+Thumbs.db
+
+# Documentos internos (não vão para o repositório)
+/Docs/Plano-de-Entrega.md
+/Docs/Projeto_3D_20262.docx.md
+/Docs/foto.png

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14014af9469d3346a5f68dc99a07620, type: 3}
+  m_Name: 2_Sabado
+  m_EditorClassIdentifier: Assembly-CSharp::Pizzaria.Jogo.DiaSO
+  nomeExibicao: "S\xE1bado"
+  descricao: "Mais clientes, menos paci\xEAncia e sabores novos: Calabresa e Napolitana."
+  duracao: 210
+  cardapio:
+  - {fileID: 11400000, guid: 6f24705f46b76184fb85afb189d3a47b, type: 2}
+  - {fileID: 11400000, guid: 7e304310907c4324f992bbc4e789d068, type: 2}
+  - {fileID: 11400000, guid: 203d6338da3e83545803a06a4db45609, type: 2}
+  - {fileID: 11400000, guid: 4c92364ba5ec9894f9da100bf41efd51, type: 2}
+  primeiroPedidoEm: 3
+  intervaloEntrePedidos: {x: 18, y: 26}
+  paciencia: 95
+  maxPedidosAbertos: 3
+  limiteClientesPerdidos: 3
+  mostrarDicas: 0

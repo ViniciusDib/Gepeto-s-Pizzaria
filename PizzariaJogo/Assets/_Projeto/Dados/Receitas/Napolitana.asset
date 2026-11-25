@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5a3a0208cb2e34992c73deb26976d2, type: 3}
+  m_Name: Napolitana
+  m_EditorClassIdentifier: Assembly-CSharp::Pizzaria.Dados.ReceitaSO
+  nomeExibicao: Napolitana
+  passos:
+  - ingrediente: {fileID: 11400000, guid: 707daefc9b20a0e49a8bb7930ed59513, type: 2}
+    quantidade: 1
+  - ingrediente: {fileID: 11400000, guid: 30bfa53666f223b409f82011c0372e62, type: 2}
+    quantidade: 2
+  - ingrediente: {fileID: 11400000, guid: 4226dbbb0cd7ac04691fdc06f1ee2193, type: 2}
+    quantidade: 3
+  - ingrediente: {fileID: 11400000, guid: 8ab7e73b081384e4e81ecd231706adfa, type: 2}
+    quantidade: 2
+  - ingrediente: {fileID: 11400000, guid: 8f81751325624254181fc3457bccf97c, type: 2}
+    quantidade: 2
+  tempoForno: 9
+  toleranciaQueima: 6
+  preco: 28

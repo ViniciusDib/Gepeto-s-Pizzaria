@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14014af9469d3346a5f68dc99a07620, type: 3}
+  m_Name: 3_Domingo
+  m_EditorClassIdentifier: Assembly-CSharp::Pizzaria.Jogo.DiaSO
+  nomeExibicao: Domingo
+  descricao: Casa cheia! Clientes impacientes e as receitas inventadas do chef.
+  duracao: 240
+  cardapio:
+  - {fileID: 11400000, guid: 7e304310907c4324f992bbc4e789d068, type: 2}
+  - {fileID: 11400000, guid: 203d6338da3e83545803a06a4db45609, type: 2}
+  - {fileID: 11400000, guid: 4c92364ba5ec9894f9da100bf41efd51, type: 2}
+  - {fileID: 11400000, guid: 7ac66535d465f91428857286dfc3c3b7, type: 2}
+  - {fileID: 11400000, guid: b64beff01617a274688a2ae63649a3eb, type: 2}
+  primeiroPedidoEm: 3
+  intervaloEntrePedidos: {x: 13, y: 20}
+  paciencia: 75
+  maxPedidosAbertos: 4
+  limiteClientesPerdidos: 4
+  mostrarDicas: 0
