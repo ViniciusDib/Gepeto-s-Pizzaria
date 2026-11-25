@@ -1,4 +1,4 @@
-# Jogo da Pizzaria 3D — Documento de Produção
+# Gepeto's Pizzaria — Documento de Produção
 
 ## Visão geral
 

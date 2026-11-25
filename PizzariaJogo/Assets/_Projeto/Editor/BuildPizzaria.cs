@@ -10,7 +10,7 @@ namespace Pizzaria.EditorTools
     {
         [MenuItem("Pizzaria/Build Windows", priority = 20)]
         public static void BuildWindows() =>
-            Construir(BuildTarget.StandaloneWindows64, "Builds/Windows/Pizzaria3D.exe");
+            Construir(BuildTarget.StandaloneWindows64, "Builds/Windows/GepetosPizzaria.exe");
 
         [MenuItem("Pizzaria/Build WebGL", priority = 21)]
         public static void BuildWebGL() =>
@@ -26,7 +26,7 @@ namespace Pizzaria.EditorTools
             var r = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 scenes = new[] { GeradorCozinha.CaminhoCena },
-                locationPathName = "Builds/Windows/Pizzaria3D.exe",
+                locationPathName = "Builds/Windows/GepetosPizzaria.exe",
                 target = BuildTarget.StandaloneWindows64,
                 options = BuildOptions.None
             }).summary;

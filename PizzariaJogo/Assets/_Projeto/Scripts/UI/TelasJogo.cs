@@ -11,6 +11,13 @@ namespace Pizzaria.UI
     /// </summary>
     public class TelasJogo : MonoBehaviour
     {
+        private const string TextoCreditos =
+            "<b>Equipe</b>\nVinicius Dib  ·  Greta Faria  ·  Thomas Rudge  ·  Enzo Christofoletti\n\n" +
+            "<b>Projeto 3D</b>\nInsper · 2026\n\n" +
+            "<b>Arte, música e sons</b>\nCenário, modelos, texturas, trilha (tarantela) e efeitos sonoros\ngerados por código no próprio projeto, sem assets de terceiros.\n\n" +
+            "<b>Ferramentas</b>\nUnity 6 (URP) · Input System\nParte do código escrita com auxílio do Claude Code (Anthropic).\n\n" +
+            "<i>Grazie mille por jogar!</i>";
+
         private const string TextoComoJogar =
             "<b>Objetivo</b>\nSobreviva aos 3 dias de trabalho (segunda, sábado e domingo) sem deixar clientes demais irem embora bravos.\n\n" +
             "<b>Como fazer uma pizza</b>\n" +
@@ -21,7 +28,7 @@ namespace Pizzaria.UI
             "5. Deixe no BALCÃO. O garçom leva; pizza errada volta e vai para a LIXEIRA.\n\n" +
             "<b>Controles</b>\nWASD andar · Shift correr · Mouse olhar\nClique/E usar · Botão direito/Q pegar/devolver\nRoda do mouse ou 1-9 escolher ingrediente · Esc/P pausar";
 
-        private enum SubTela { Nenhuma, ComoJogar, Opcoes, Recordes }
+        private enum SubTela { Nenhuma, ComoJogar, Opcoes, Recordes, Creditos }
 
         private SubTela sub;
         private string nomeJogador;
@@ -103,6 +110,11 @@ namespace Pizzaria.UI
                     }
                     if (Botao(x, y + 500 * escala, largura, escala, "Voltar")) sub = SubTela.Nenhuma;
                     return;
+                case SubTela.Creditos:
+                    Titulo(new Rect(x, y, largura, 80 * escala), "Créditos", escala);
+                    GUI.Label(new Rect(x - 100 * escala, y + 110 * escala, largura + 200 * escala, 520 * escala), TextoCreditos, texto);
+                    if (Botao(x, y + 670 * escala, largura, escala, "Voltar")) sub = SubTela.Nenhuma;
+                    return;
                 case SubTela.Recordes:
                     Titulo(new Rect(x, y, largura, 80 * escala), "Recordes", escala);
                     TabelaRecordes(x, y + 120 * escala, largura, escala, jogo.IdPartida, jogo.TotalDias);
@@ -118,14 +130,15 @@ namespace Pizzaria.UI
             switch (jogo.Estado)
             {
                 case EstadoJogo.Menu:
-                    Titulo(new Rect(x, y, largura, 90 * escala), "Pizzaria 3D", escala);
+                    Titulo(new Rect(x, y, largura, 90 * escala), "Gepeto's Pizzaria", escala);
                     GUI.Label(new Rect(x, y + 100 * escala, largura, 150 * escala),
                         "Você é o cozinheiro. Monte as pizzas na ordem da receita, asse sem queimar e entregue no balcão.\nSobreviva ao fim de semana!", texto);
-                    if (Botao(x, by - 40 * escala, largura, escala, "Jogar")) jogo.NovoJogo();
-                    if (Botao(x, by + 40 * escala, largura, escala, "Como jogar")) sub = SubTela.ComoJogar;
-                    if (Botao(x, by + 120 * escala, largura, escala, "Recordes")) sub = SubTela.Recordes;
-                    if (Botao(x, by + 200 * escala, largura, escala, "Opções")) sub = SubTela.Opcoes;
-                    if (GerenciadorJogo.PodeSair && Botao(x, by + 280 * escala, largura, escala, "Sair")) jogo.Sair();
+                    if (Botao(x, by - 50 * escala, largura, escala, "Jogar")) jogo.NovoJogo();
+                    if (Botao(x, by + 22 * escala, largura, escala, "Como jogar")) sub = SubTela.ComoJogar;
+                    if (Botao(x, by + 94 * escala, largura, escala, "Recordes")) sub = SubTela.Recordes;
+                    if (Botao(x, by + 166 * escala, largura, escala, "Opções")) sub = SubTela.Opcoes;
+                    if (Botao(x, by + 238 * escala, largura, escala, "Créditos")) sub = SubTela.Creditos;
+                    if (GerenciadorJogo.PodeSair && Botao(x, by + 310 * escala, largura, escala, "Sair")) jogo.Sair();
                     break;
 
                 case EstadoJogo.Pausado:

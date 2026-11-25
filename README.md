@@ -1,4 +1,4 @@
-# Pizzaria 3D
+# Gepeto's Pizzaria
 
 Jogo 3D em primeira pessoa feito em **Unity 6 (URP)**. Você é o cozinheiro de uma pizzaria: lê as comandas, pega os ingredientes, monta as pizzas **na ordem da receita**, assa sem queimar e entrega no balcão. Sobreviva aos 3 dias do fim de semana sem deixar clientes demais irem embora bravos.
 
@@ -33,7 +33,7 @@ No fim da partida (vitória ou derrota), digite seu nome para entrar na **tabela
 2. Menu **Pizzaria > Gerar Cozinha Greybox** para gerar a cena `Assets/Scenes/Cozinha.unity` e os dados (ingredientes, receitas, dias).
 3. Aperte Play.
 
-**Builds:** **Pizzaria > Build Windows** (gera `Builds/Windows/Pizzaria3D.exe`) ou **Pizzaria > Build WebGL**.
+**Builds:** **Pizzaria > Build Windows** (gera `Builds/Windows/GepetosPizzaria.exe`) ou **Pizzaria > Build WebGL**.
 
 ## Estrutura do código (`PizzariaJogo/Assets/_Projeto/Scripts`)
 
