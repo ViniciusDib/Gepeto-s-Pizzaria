@@ -2,7 +2,7 @@
 
 Jogo 3D em primeira pessoa feito em **Unity 6 (URP)**. Você é o cozinheiro de uma pizzaria: lê as comandas, pega os ingredientes, monta as pizzas **na ordem da receita**, assa sem queimar e entrega no balcão. Sobreviva aos 3 dias do fim de semana sem deixar clientes demais irem embora bravos.
 
-- **Jogar:** _link do itch.io aqui_
+- **Jogar:** [_link do itch.io aqui_](https://viniciusdib.itch.io/gepetos-pizzaria)
 - **GDD:** [`Docs/GDD.md`](Docs/GDD.md)
 
 ## Como jogar
