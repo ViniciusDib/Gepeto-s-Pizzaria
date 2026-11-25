@@ -16,6 +16,24 @@ namespace Pizzaria.EditorTools
         public static void BuildWebGL() =>
             Construir(BuildTarget.WebGL, "Builds/WebGL");
 
+        /// <summary>
+        /// Linha de comando (sem abrir o Editor): gera a cena atualizada e faz a build Windows.
+        /// Unity.exe -batchmode -quit -projectPath PizzariaJogo -executeMethod Pizzaria.EditorTools.BuildPizzaria.BuildWindowsLote
+        /// </summary>
+        public static void BuildWindowsLote()
+        {
+            GeradorCozinha.Gerar();
+            var r = BuildPipeline.BuildPlayer(new BuildPlayerOptions
+            {
+                scenes = new[] { GeradorCozinha.CaminhoCena },
+                locationPathName = "Builds/Windows/Pizzaria3D.exe",
+                target = BuildTarget.StandaloneWindows64,
+                options = BuildOptions.None
+            }).summary;
+            Debug.Log($"[Pizzaria] Build em lote: {r.result}, {r.totalErrors} erro(s), {r.totalSize / (1024 * 1024)} MB");
+            EditorApplication.Exit(r.result == BuildResult.Succeeded ? 0 : 1);
+        }
+
         private static void Construir(BuildTarget alvo, string caminho)
         {
             if (!File.Exists(GeradorCozinha.CaminhoCena))

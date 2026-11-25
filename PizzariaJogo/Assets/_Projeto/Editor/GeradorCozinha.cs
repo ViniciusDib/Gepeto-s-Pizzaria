@@ -381,6 +381,7 @@ namespace Pizzaria.EditorTools
 
         static GeradorAutomatico()
         {
+            if (Application.isBatchMode) return; // linha de comando: quem chama decide (BuildPizzaria.BuildWindowsLote)
             if (SessionState.GetBool(Chave, false)) return;
             SessionState.SetBool(Chave, true);
 
